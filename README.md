@@ -54,6 +54,8 @@
     * php artisan make:migration create_to_dos_table
     * php artisan make:migration create_to_do_details_table
     * カラムを設定する
+    * DBをマイグレートする
+        `php artisan migrate`
 1. Model作成
     * php artisan make:model ToDo
     * php artisan make:model ToDoDetail
@@ -63,3 +65,11 @@
     * php artisan make:factory ToDoDetailFactory
     * ランダム値を設定する
     * Seedを作成する
+        `php artisan db:seed`
+1. データを確認する
+    * DBに接続する
+    * tinkerを起動する
+        `php artisan tinker`
+    * ToDoレコードを取得し、データを確認する
+        `$todo = ToDo::find(1);`
+        `$todo->toDoDetails;`
