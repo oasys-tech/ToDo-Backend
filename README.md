@@ -13,7 +13,7 @@
 1. C:\xampp\htdocsにソースをコピーする
 1. xamppシェルを起動する
 1. アプリケーションディレクトリに移動する
-    * cd todo-app
+    * cd htdocs\todo-app
 1. パッケージのインストール
     * composer install
 1. apacheのバーチャルホスト設定
@@ -34,4 +34,4 @@
     * `$ php artisan key:generate`
 1. 動作確認
     * xamppのApacheを起動する
-    * httpd://localhost
+    * http://localhost
