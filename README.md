@@ -4,26 +4,34 @@
 1. gitをインストールする
     * Checkout as-is, commit Unix-style line endings : true
     * Enable symbolic links : true
-1. dockerをインストールする
-1. dockerにCドライブを共有する
-    * docker Settings -> Shared Drives
-1. プロジェクト用ディレクトリを作成し、リポジトリをクローンする
-    * `> mkdir C:\Users\{UserName}\develop\Todo-Repo\`
-    * `> cd C:\Users\{UserName}\develop\Todo-Repo\`
-    * `> git clone https://github.com/oasys-tech/ToDo-0 .`
-1. サブモジュールをプルする
-    * `> git submodule init`
-    * `> git submodule update`
-1. ygb-laradockディレクトリに移動する
-    * `> cd laradock`
-1. dockerイメージを作成する
-    * ※管理者として起動したターミナルで実行すること
-    * `> docker-compose up -d apache2 mysql workspace`
-1. workspacesにログインする
-    * `> docker-compose exec workspace bash`
+1. xamppをインストールする
+    * https://www.apachefriends.org/jp/download.html
+    * インストールする
+    * C:\xamppを書き込みできるようにする
+1. composerをインストールする
+    * https://getcomposer.org/download/
+1. C:\xampp\htdocsにソースをコピーする
+1. xamppシェルを起動する
+1. アプリケーションディレクトリに移動する
+    * cd todo-app
+1. パッケージのインストール
+    * composer install
+1. apacheのバーチャルホスト設定
+    "C:\xampp\apache\conf\extra\httpd-vhosts.conf"に以下を追記する
+    ```
+    <VirtualHost *:80>
+        DocumentRoot "C:\xampp\htdocs\todo-app\public"
+        ServerName localhost
+        <Directory "C:\xampp\htdocs\todo-app\public">
+            AllowOverride All
+            Options All
+            Require all granted
+        </Directory>
+    </VirtualHost>
+    ```
 1. laravelの初期設定
-    * `$ cd /var/www`
-    * `$ composer install` ※Tokenの入力が求められた場合は、コンソールに出力されたURLにアクセスしてGitHubのアクセストークンを生成する。
-    * `$ cp ./deployment/env/.env.example .env`
+    * `$ cp .env.example .env`
     * `$ php artisan key:generate`
-    * `$ php artisan jwt:secret`
+1. 動作確認
+    * xamppのApacheを起動する
+    * httpd://localhost
