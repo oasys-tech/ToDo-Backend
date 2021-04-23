@@ -35,3 +35,16 @@
 1. 動作確認
     * xamppのApacheを起動する
     * http://localhost
+
+# DB構築
+1. mysqlのパスワードを設定する
+    * mysqladmin -u root password
+    * New password: secret
+    * Confirm new password: secret
+1. DBに接続する
+    * mysql -u root -p
+1. 新しいスキーマを作成する
+    * mysql -u root -p
+    * CREATE DATABASE todo;
+1. DBをマイグレートする
+    * php artizan migrate
