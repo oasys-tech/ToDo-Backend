@@ -48,3 +48,18 @@
     * CREATE DATABASE todo;
 1. DBをマイグレートする
     * php artizan migrate
+
+# DB Table作成
+1. Migrationファイル作成
+    * php artisan make:migration create_to_dos_table
+    * php artisan make:migration create_to_do_details_table
+    * カラムを設定する
+1. Model作成
+    * php artisan make:model ToDo
+    * php artisan make:model ToDoDetail
+    * リレーションを作成する
+1. Seed作成
+    * php artisan make:factory ToDoFactory
+    * php artisan make:factory ToDoDetailFactory
+    * ランダム値を設定する
+    * Seedを作成する
