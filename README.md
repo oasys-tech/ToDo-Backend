@@ -80,4 +80,6 @@
 1. ToDoDetailControllerを作成する
     * `php artisan make:controller ToDoDetailController --resource`
 1. ルーティングを設定する
+1. ルーティングを確認する
+    * `php artisan route:list`
 1. Contollerに処理を記述する
