@@ -95,7 +95,7 @@
 1. 動作確認する
 
 # ToDo Update Request作成
-1. Todo/StoreRequestを作成する
+1. Todo/UpdateRequestを作成する
     * `php artisan make:request ToDo/UpdateRequest`
 1. Todo/UpdateRequestにバリデーションルールを設定する
 1. ToDoControllerのUpdateアクションでUpdateRequestを取得する
