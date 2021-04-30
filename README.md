@@ -83,3 +83,13 @@
 1. ルーティングを確認する
     * `php artisan route:list`
 1. Contollerに処理を記述する
+
+# ToDo Store Request作成
+1. Todo/StoreRequestを作成する
+    * `php artisan make:request ToDo/StoreRequest`
+1. Todo/StoreRequestにバリデーションルールを設定する
+1. ToDoControllerのStoreアクションでStoreRequestを取得する
+1. ToDoControllerのStoreアクションで登録処理を作成する
+1. APIの動作確認用の拡張機能をインストールする(Chrome)
+    * url(https://chrome.google.com/webstore/detail/talend-api-tester-free-ed/aejoelaoggembcahagimdiliamlcdmfm)
+1. 動作確認する
