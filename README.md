@@ -38,31 +38,31 @@
 
 # DB構築
 1. mysqlのパスワードを設定する
-    * mysqladmin -u root password
-    * New password: secret
-    * Confirm new password: secret
+    * `mysqladmin -u root password`
+    * `New password: secret`
+    * `Confirm new password: secret`
 1. DBに接続する
-    * mysql -u root -p
+    * `mysql -u root -p`
 1. 新しいスキーマを作成する
-    * mysql -u root -p
-    * CREATE DATABASE todo;
+    * `mysql -u root -p`
+    * `CREATE DATABASE todo;`
 1. DBをマイグレートする
-    * php artizan migrate
+    * `php artisan migrate`
 
 # DB Table作成
 1. Migrationファイル作成
-    * php artisan make:migration create_to_dos_table
-    * php artisan make:migration create_to_do_details_table
+    * `php artisan make:migration create_to_dos_table`
+    * `php artisan make:migration create_to_do_details_table`
     * カラムを設定する
     * DBをマイグレートする
         `php artisan migrate`
 1. Model作成
-    * php artisan make:model ToDo
-    * php artisan make:model ToDoDetail
+    * `php artisan make:model ToDo`
+    * `php artisan make:model ToDoDetail`
     * リレーションを作成する
 1. Seed作成
-    * php artisan make:factory ToDoFactory
-    * php artisan make:factory ToDoDetailFactory
+    * `php artisan make:factory ToDoFactory`
+    * `php artisan make:factory ToDoDetailFactory`
     * ランダム値を設定する
     * Seedを作成する
         `php artisan db:seed`
@@ -73,3 +73,11 @@
     * ToDoレコードを取得し、データを確認する
         `$todo = ToDo::find(1);`
         `$todo->toDoDetails;`
+
+# Controller作成
+1. ToDoControllerを作成する
+    * `php artisan make:controller ToDoController --resource`
+1. ToDoDetailControllerを作成する
+    * `php artisan make:controller ToDoDetailController --resource`
+1. ルーティングを設定する
+1. Contollerに処理を記述する
