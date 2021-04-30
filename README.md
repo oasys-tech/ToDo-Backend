@@ -101,3 +101,7 @@
 1. ToDoControllerのUpdateアクションでUpdateRequestを取得する
 1. ToDoControllerのUpdateアクションで更新処理を作成する
 1. 動作確認する
+
+# ToDo Delete Request作成
+1. ToDoControllerのDeleteアクションで削除処理を作成する
+1. 動作確認する
