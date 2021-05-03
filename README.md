@@ -30,7 +30,7 @@
     </VirtualHost>
     ```
 1. laravelの初期設定
-    * `$ cp .env.example .env`
+    * `$ copy .env.example .env`
     * `$ php artisan key:generate`
 1. 動作確認
     * xamppのApacheを起動する
