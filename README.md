@@ -44,8 +44,8 @@
 1. DBに接続する
     * `mysql -u root -p`
 1. 新しいスキーマを作成する
-    * `mysql -u root -p`
     * `CREATE DATABASE todo;`
+1. laravelの.envを修正する
 1. DBをマイグレートする
     * `php artisan migrate`
 
