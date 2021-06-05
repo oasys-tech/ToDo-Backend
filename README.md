@@ -68,6 +68,7 @@
         `php artisan db:seed`
 1. データを確認する
     * DBに接続する
+    * `composer dump-autoload`
     * tinkerを起動する
         `php artisan tinker`
     * ToDoレコードを取得し、データを確認する
