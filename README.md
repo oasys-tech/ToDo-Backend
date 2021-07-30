@@ -130,4 +130,4 @@
 
 # ToDo Delete処理をカスタマイズする
 1. ToDoModelのdeleteメソッドをオーバーライドする
-1．関連するToDoDetailの削除処理を実装する。
+1. 関連するToDoDetailの削除処理を実装する。
