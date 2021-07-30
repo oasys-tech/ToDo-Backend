@@ -107,3 +107,27 @@
 # ToDo Delete Request作成
 1. ToDoControllerのDeleteアクションで削除処理を作成する
 1. 動作確認する
+
+# ToDoDetail Store Request作成
+1. TodoDetail/StoreRequestを作成する
+    * `php artisan make:request ToDoDetail/StoreRequest`
+1. TodoDetail/StoreRequestにバリデーションルールを設定する
+1. ToDoDetailControllerのStoreアクションでStoreRequestを取得する
+1. ToDoDetailControllerのStoreアクションで登録処理を作成する
+1. 動作確認する
+
+# ToDoDetail Update Request作成
+1. TodoDetail/UpdateRequestを作成する
+    * `php artisan make:request ToDoDetail/UpdateRequest`
+1. TodoDetail/UpdateRequestにバリデーションルールを設定する
+1. ToDoDetailControllerのUpdateアクションでUpdateRequestを取得する
+1. ToDoDetailControllerのUpdateアクションで更新処理を作成する
+1. 動作確認する
+
+# ToDoDetail Delete Request作成
+1. ToDoDetailControllerのDeleteアクションで削除処理を作成する
+1. 動作確認する
+
+# ToDo Delete処理をカスタマイズする
+1. ToDoModelのdeleteメソッドをオーバーライドする
+1．関連するToDoDetailの削除処理を実装する。
