@@ -5,7 +5,7 @@
     * Checkout as-is, commit Unix-style line endings : true
     * Enable symbolic links : true
 1. xamppをインストールする
-    * https://www.apachefriends.org/jp/download.html
+    * https://www.apachefriends.org/jp/download.html (8.0.3が見つからない方はこちら https://xamppguide.com/download/xampp-8-0-3-for-windows/ )
     * インストールする
     * C:\xamppを書き込みできるようにする
 1. composerをインストールする
